@@ -1,23 +1,20 @@
 variable "project_name" {
-    default = "Roboshop"
+    type    = string
 }
 variable "environment" {
-    default = "dev"
+     type    = string
 }
 variable "sg_name" {
-    type    =   map
+    type    = string
 }
 variable  "description"{
-    type    =   map
+     type    = string
     default =   {}
 }
 variable "vpc_id" {
-    type    =   map
+    type    =   string
 }
-variable "common_tags" {
+variable "sg_tags" {
     type    =   map
     default =   {}
-}
-variable "vpc_id"{
-    type    =   map
 }
